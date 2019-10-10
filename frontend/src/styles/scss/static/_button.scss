@@ -1,0 +1,45 @@
+.btn{
+    padding: 6px 12px;
+    min-height: 38px;
+    font-size: 14px;
+    .spinner-border{
+        width: 20px;
+        height: 20px;
+        vertical-align: text-bottom;
+        border-width: 2px;
+    }
+}
+
+.btn-back{
+    display: inline-flex;
+    align-items: center;
+    background: #fff;
+}
+.btn-group-action{
+    .dropdown{
+        &-toggle{
+
+        }
+        &-menu{
+            right: 0;
+            left: auto;
+            display: block;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: all 0.3s ease;
+            &.show{
+                opacity: 1;
+                visibility: visible;
+                transform:none;
+            }
+            a{
+                display: block;
+                &:hover{
+                    background: $primary;
+                    color:#fff;
+                }
+            }
+        }
+    }
+}

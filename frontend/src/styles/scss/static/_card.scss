@@ -1,0 +1,144 @@
+.box-loading{
+    min-height: 400px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    padding: 20px;
+    .card-body{
+        padding: 0;
+    }
+    
+    .row-table{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+.input-group-search{
+    .form-control{
+
+    }
+    .btn{
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        min-width: 60px;
+        text-align: center;
+        border-color: #ced4da;
+    }
+}
+.empty-title{
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.box-empty-data{
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    padding: 20px;
+    background-color: #fff;
+}
+.box-empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: opacity .4s cubic-bezier(.4,0,.2,1);
+    will-change: opacity;
+    width: 100%;
+    padding: 20px;
+    &-icon{
+        width: 160px;
+        min-width: 160px;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        i{
+            font-size: 160px!important;
+        }
+    }
+    &-title{
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 40px;
+        width: 100%;
+    }
+    &-content{
+        text-align: left;
+        padding: 0 15px;
+        width: 100%;
+        p{
+            margin: 1em 0;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    &-btn{
+        .btn{
+            min-width: 200px;
+        }
+    }
+}
+
+
+.result-box{
+    &-head{
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        h3{
+            display: block;
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+            
+        }
+    }
+    &-body{
+        .competition-info{
+            list-style-type: none;
+            padding: 0;
+            li{
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+        .item-result{
+            &-title{
+                h4{
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+            &-content{
+                padding-left: 30px;
+            }
+            &-label{
+                font-size: 14px;
+                font-weight: bold;
+                display: block;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+            &-thread{
+                margin-bottom: 10px;
+            }
+            &-test-case{
+                margin-bottom: 10px;
+                &-line{
+                    margin-bottom: 5px;
+                    margin-left: 15px;
+                }
+            }
+            &-final{
+
+            }
+        }
+    }
+}

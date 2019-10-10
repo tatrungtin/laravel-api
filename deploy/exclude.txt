@@ -1,0 +1,9 @@
+.idea
+.git*
+storage
+public/adminAsset
+test
+vendor
+.env*
+deploy
+.htaccess

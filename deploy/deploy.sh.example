@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+SERVER="username@server_ip"
+DEPLOY_PATH="/var/www/link/to/source"
+SOURCE_FOLDER_NAME="this-source-name"
+
+FILE_NAME="$SOURCE_FOLDER_NAME.tar.gz"
+cd ..
+rm -rf $FILE_NAME
+tar -zcv -X $SOURCE_FOLDER_NAME/deploy/exclude.txt -f $FILE_NAME $SOURCE_FOLDER_NAME
+echo "=================================="
+echo "Upload source..."
+scp $FILE_NAME $SERVER:~
+echo "=================================="
+echo "Deploying..."
+
+SCRIPT1="cd ~"
+SCRIPT2="tar -xzvf $FILE_NAME"
+SCRIPT3="command cp -rf $SOURCE_FOLDER_NAME/. $DEPLOY_PATH"
+SCRIPT4="rm $FILE_NAME && rm -rf $SOURCE_FOLDER_NAME"
+ssh $SERVER "$SCRIPT1 && $SCRIPT2 && $SCRIPT3 && $SCRIPT4"
+
+echo "=================================="
+rm -rf $FILE_NAME
+echo "Done"

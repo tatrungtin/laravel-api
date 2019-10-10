@@ -1,0 +1,24 @@
+@import './scss/static/variables';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import './scss/static/mixins';
+@import './scss/static/fonts';
+@import './scss/static/utilities';
+@import './scss/static/default';
+@import './scss/static/button';
+@import './scss/static/icon';
+@import './scss/static/animations';
+@import './scss/static/card';
+@import './scss/static/form';
+@import './scss/static/table';
+
+/* partials */
+@import './scss/partials/body';
+@import './scss/partials/header';
+@import './scss/partials/footer';
+@import './scss/partials/main';
+@import './scss/partials/aside';
+
+/* component */
+@import './scss/components/pagination';
+@import './scss/components/breadcrumb';
+@import './scss/components/toast';

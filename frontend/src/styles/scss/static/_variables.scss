@@ -1,0 +1,111 @@
+
+/* Primary color */
+$primary-color: #4D4F5C;  
+$primary-color-hover: #000000;  
+$primary-background : #ffff;
+$primary-font-family : apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+$primary-font-size : 1rem;
+$primary-border-color:#e6e7f0;
+$primary-title-font-weight: 600;
+
+$text : #4D4F5C; 
+/* border color  */
+$border-color : #CCCCCC;
+
+
+/* Color */
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #7009FF !default;
+$pink:    #e83e8c !default;
+$red:     #f55a4e !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+
+
+$breakpoints-sm: 600px;
+$breakpoints-md: 720px;
+$breakpoints-lg: 960px;
+$breakpoints-xl: 1140px;
+$breakpoints-xxl: 1610px;
+
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: $breakpoints-sm,
+    md: $breakpoints-md,
+    lg: $breakpoints-lg,
+    xl: $breakpoints-xl,
+    xxl: $breakpoints-xxl
+);
+
+$container-max-widths: (
+    sm: $breakpoints-sm,
+    md: $breakpoints-md,
+    lg: $breakpoints-lg,
+    xl: $breakpoints-xl,
+    xxl: $breakpoints-xxl
+);

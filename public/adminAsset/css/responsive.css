@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1920px) {
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 960px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    .row{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .caption .ction{
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .caption .ction{
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .caption .ction{
+        font-size: 6px;
+    }
+    .btn-enter{
+        font-size: 4px;
+    }
+}
